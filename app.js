@@ -14,6 +14,6 @@ app.get("/api/shopping-list", (req, res) => {
 });
 
 // Server will listen to port 8080
-app.listen(8080, 
+app.listen(process.env.PORT || 8080, 
     () => console.log(`Server is listening on port ${8080}`)
 );
